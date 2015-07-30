@@ -61,7 +61,7 @@ getFrequentItems <- function(fname, transactions, support, confidence){
    ofile = "fpgrowth-out.dat"
    # call the fpgrowth function
    cat("calling fpgrowth code....\n")
-   fcall <- paste("/home/jdwood/debs/fpgrowth/fpgrowth/src/fpgrowth -s",
+   fcall <- paste("fpgrowth -s",
                   support, " -c", confidence, " -m1 -v" " ', fname, " ", ofile, sep = "")
    cat(fcall,"\n")
    system(fcall)
