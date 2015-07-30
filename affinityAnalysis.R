@@ -62,7 +62,7 @@ getFrequentItems <- function(fname, transactions, support, confidence){
    # call the fpgrowth function
    cat("calling fpgrowth code....\n")
    fcall <- paste("fpgrowth -s",
-                  support, " -c", confidence, " -m1 -v" " ', fname, " ", ofile, sep = "")
+                  support, " -c", confidence, ' -m1 -v" " ', fname, " ", ofile, sep = "")
    cat(fcall,"\n")
    system(fcall)
    cat("...done\n\n")
